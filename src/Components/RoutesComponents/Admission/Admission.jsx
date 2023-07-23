@@ -8,7 +8,7 @@ const Admission = () => {
     // console.log(allCollege)
 
     useEffect(() => {
-        fetch('http://localhost:5000/colleges')
+        fetch('https://server-side-three-psi.vercel.app/colleges')
             .then(res => res.json())
             .then(data => setAllCollege(data))
     }, [])

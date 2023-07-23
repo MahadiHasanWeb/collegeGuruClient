@@ -43,7 +43,7 @@ export const router = createBrowserRouter([
             {
                 path: '/Colleges/college/:id',
                 element: <CollegeDetails></CollegeDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/Colleges/college/${params.id}`)
+                loader: ({ params }) => fetch(`https://server-side-three-psi.vercel.app/Colleges/college/${params.id}`)
             },
             {
                 path: '/Admission/college/:id',
